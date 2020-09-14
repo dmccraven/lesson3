@@ -2,13 +2,15 @@ body {
     color: black;
     margin: 10px;
     padding: 50px;
-    font-family: sans-serif;
+    font-family: sans-serif, helvetica, arial;
     font-size: 16px;
     background: black;
 }
 
 img {
     width: 400px;
+    float: left;
+    margin: 0px 10px 10px 0px; 
 }
 
 a {
@@ -23,6 +25,8 @@ a:visited {
 h1 {
     font-size: 100px;
     line-height: 1;
+    font-family: Impact;
+    animation: color-change 3s infinite;
 }
 
 h2 {
@@ -52,12 +56,25 @@ ul {
     font-size: 30px;
 }
 
+.clear {
+    clear: both;
+}
 
+/* HEADER ANIMATION */
+
+@keyframes color-change {
+    0% { color: lightgoldenrodyellow; }
+    25% { color: lightblue; }
+    50% { color: lightsalmon; }
+    75% { color: lightblue; }
+    100% { color: lightgoldenrodyellow; }
+  }
 
 /* PROJECTS SECTION */
 
 #projects {
     background: lightgoldenrodyellow;
+    overflow: hidden;
 }
 
 /* MISSION SECTION */
